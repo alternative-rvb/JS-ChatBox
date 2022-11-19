@@ -10,7 +10,12 @@ JS ChatBox: https://js-chat-box.vercel.app/
 
 ## Notes
 
-Le CSS principal provient
+Le CSS principal provient du CDN
 
 https://github.com/alternative-rvb/Simple-Semantic-CSS
+
+## À faire
+
+- [ ] Persistance des donées
+- [ ] Suppression de messages
 
