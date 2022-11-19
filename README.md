@@ -16,6 +16,6 @@ https://github.com/alternative-rvb/Simple-Semantic-CSS
 
 ## À faire
 
-- [ ] Persistance des donées
+- [ ] Persistance des données
 - [ ] Suppression de messages
 - [ ] Optimisation de l'interface
