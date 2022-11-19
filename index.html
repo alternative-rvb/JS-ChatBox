@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chatbox</title>
+  <!-- Simple Semantic CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alternative-rvb/Simple-Semantic-CSS/css/v1.09/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .chat {
+      background-color: hsla(0, 0%, 0%, 0.2);
+    }
+    .chat {
+      flex: 1 1 360px;
+    }
+    .chat__box {
+      height: 50vh;
+      background-color: hsla(0, 0%, 0%, 0.5);
+      padding: 1rem;
+      overflow-y: auto;
+      border-radius: 5px;
+      font-size: small;
+      gap: 0.5rem;
+    }
+
+    .chat__line {
+      padding: 4px;
+      border-radius: 5px;
+      max-width: 80%;
+      min-width: 4rem;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+      hyphens: auto;
+    }
+    .chat__line strong {
+      font-size: 10px;
+      opacity: 0.5;
+    }
+    
+    .line1 {
+      background-color: hsla(0, 0%, 0%, 1);
+      align-self: end;
+    }
+    .line2 {
+      background-color: hsla(0, 100%, 100%, 0.1);
+      align-self: start;
+
+    }
+
+    form input[type="text"] {
+      margin-bottom: 0;
+      border-radius: 5px 0 0 5px;
+    }
+
+    form button {
+      padding: 0.5rem;
+      border-width: 1px;
+      border-radius: 0 5px 5px 0;
+      
+    }
+  </style>
+</head>
+
+<body>
+  <main class="mw-1320 m-auto p-1">
+    <h1 class="text-c">Chatbox</h1>
+    <div class="d-flex wrap g-1 jc-c my-2">
+      <section class="chat shadow p-1 d-flex column g-1">
+        <h2>Mohamed</h2>
+        <div id="msgBox1" class="chat__box d-flex column"></div>
+        <form id="chatForm1" class="d-flex ai-c" onsubmit="sendMessage1()">
+          <input id="message1" class="chat__msg" type="text" name="message1" placeholder="..." value="" />
+          <button><i class="fa-regular fa-paper-plane"></i></button>
+        </form>
+      </section>
+      <section class="chat shadow p-1 d-flex column g-1">
+        <h2>Nico</h2>
+        <div id="msgBox2" class="chat__box d-flex column"></div>
+        <form id="chatForm2" class="d-flex ai-c" onsubmit="sendMessage2()">
+          <input id="message2" class="chat__msg" type="text" name="message2" placeholder="..." value="" />
+          <button><i class="fa-regular fa-paper-plane"></i></button>
+        </form>
+      </section>
+    </div>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
