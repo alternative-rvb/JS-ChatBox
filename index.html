@@ -6,11 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chatbox</title>
-  <!-- Simple Semantic CSS CDN -->
+  <!-- Simple Semantic CSS Maison -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alternative-rvb/Simple-Semantic-CSS/css/v1.09/main.css" />
+  <!-- Icônes FontAwseome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- CUSTOM Style -->
   <style>
     .chat {
       background-color: hsla(0, 0%, 0%, 0.2);
@@ -36,7 +38,7 @@
       background-color: hsla(0, 0%, 0%, 0.5);
     }
 
-    .chat__box::-webkit-scrollbar-thumb{
+    .chat__box::-webkit-scrollbar-thumb {
       background-color: hsla(0, 100%, 100%, 0.2);
     }
 
@@ -62,7 +64,6 @@
     .line2 {
       background-color: hsla(0, 100%, 100%, 0.1);
       align-self: start;
-
     }
 
     form input[type="text"] {
@@ -74,7 +75,6 @@
       padding: 0.5rem;
       border-width: 1px;
       border-radius: 0 5px 5px 0;
-
     }
   </style>
 </head>
@@ -85,7 +85,9 @@
     <div class="d-flex wrap g-1 jc-c my-2">
       <section class="chat shadow p-1 d-flex column g-1">
         <h2>Mohamed</h2>
+        <!-- Boîte de réception des messages -->
         <div id="msgBox1" class="chat__box d-flex column"></div>
+        <!-- Formulaires pour l'envoi de messages -->
         <form id="chatForm1" class="d-flex ai-c" onsubmit="sendMessage1()">
           <input id="message1" class="chat__msg" type="text" name="message1" placeholder="..." value="" />
           <button><i class="fa-regular fa-paper-plane"></i></button>
@@ -93,7 +95,9 @@
       </section>
       <section class="chat shadow p-1 d-flex column g-1">
         <h2>Nico</h2>
+        <!-- Boîte de réception des messages -->
         <div id="msgBox2" class="chat__box d-flex column"></div>
+        <!-- Formulaires pour l'envoi de messages -->
         <form id="chatForm2" class="d-flex ai-c" onsubmit="sendMessage2()">
           <input id="message2" class="chat__msg" type="text" name="message2" placeholder="..." value="" />
           <button><i class="fa-regular fa-paper-plane"></i></button>
